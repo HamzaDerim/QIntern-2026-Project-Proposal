@@ -4,42 +4,24 @@
 [![Status: Proposal](https://img.shields.io/badge/Status-Project_Proposal-orange.svg)]()
 [![Domain: QML & Optimization](https://img.shields.io/badge/Domain-QML_%7C_Quantum_Optimization-green.svg)]()
 
-## 📌 Proje Özeti (Abstract)
+## 📌 Abstract
 
-Bu depo, **QIntern 2026** araştırma programı için hazırlanan "Dinamik Enerji Sistemleri Optimizasyonu için Kuantum Destekli Neural ODE'ler ve QAOA" başlıklı proje teklifinin temel dokümanlarını, kavramsal çerçevesini ve ilerleyen süreçteki hibrit kuantum-klasik kod altyapısını içermektedir.
+This repository contains the core documents, conceptual framework, and the upcoming hybrid quantum-classical codebase for the project proposal titled "Quantum-Enhanced Neural ODEs and QAOA for Dynamic Energy System Optimization," prepared for the **QIntern 2026** research program.
 
-Araştırmanın temel odak noktası, akıllı şebekelerde ve endüstriyel tesislerde karşılaşılan yüksek boyutlu, stokastik enerji yük kaydırma (load-shifting) problemlerini kuantum algoritmalarıyla çözmektir. Bu doğrultuda, geleneksel Karışık Tam Sayılı Doğrusal Programlama (MILP) yöntemlerinin yerini almak üzere **Kuantum Yaklaşık Optimizasyon Algoritması (QAOA)** ve klasik dinamik sistem tahminleyicilerinin yerini almak üzere **Kuantum Neural ODE'ler** ile **Fizik Bilgili Kuantum Sinir Ağları (Q-PINNs)** önerilmektedir.
+The primary focus of this research is to solve high-dimensional, stochastic load-shifting problems encountered in smart grids and industrial facilities using quantum algorithms. To this end, we propose the **Quantum Approximate Optimization Algorithm (QAOA)** to replace traditional Mixed-Integer Linear Programming (MILP) methods, and **Quantum Neural ODEs** coupled with **Physics-Informed Quantum Neural Networks (Q-PINNs)** to replace classical dynamic system predictors.
 
-## 🎯 Temel Bilimsel Hedefler ve Metodoloji
+## 🎯 Core Scientific Objectives and Methodology
 
-Proje, güncel Noisy Intermediate-Scale Quantum (NISQ) cihazlarının potansiyelini dinamik sistemler teorisiyle birleştirerek aşağıdaki bilimsel katkıları sunmayı hedeflemektedir:
+The project aims to provide the following scientific contributions by combining the potential of current Noisy Intermediate-Scale Quantum (NISQ) devices with dynamic systems theory:
 
-1. **QUBO Formülasyonu ve QAOA Entegrasyonu:** Endüstriyel enerji arbitrajı ve maliyet minimizasyonu problemleri, Kısıtsız İkinci Dereceden İkili Optimizasyon (QUBO) modellerine dönüştürülecek ve QAOA kullanılarak optimize edilecektir.
-2. **Kuantum Zaman Serisi Modellemesi:** Termodinamik kısıtlar ve şebeke stres dinamikleri, PQC (Parametreli Kuantum Devreleri) tabanlı Q-PINN'ler ve sürekli zamanlı Neural ODE'ler ile modellenecektir.
-3. **Kuantum Pekiştirmeli Öğrenme (QRL) Keşfi:** Geleneksel optimizasyon süreçlerine ek olarak, Markov Karar Süreçleri üzerinden eğitilen Kuantum Derin Q-Ağları (Q-DQN) ile dinamik politika (policy) öğrenimi deneysel olarak test edilecektir.
-4. **Donanım Testleri ve Hata Azaltma (Error Mitigation):** Geliştirilen hibrit algoritmalar IBM Quantum gibi gerçek kuantum donanımlarında test edilecek ve donanım gürültüsünün etkilerini minimize etmek için Zero-Noise Extrapolation (ZNE) gibi hata azaltma teknikleri uygulanacaktır.
+1. **QUBO Formulation and QAOA Integration:** Industrial energy arbitrage and cost minimization problems will be mapped to Quadratic Unconstrained Binary Optimization (QUBO) models and optimized using QAOA.
+2. **Quantum Time Series Modeling:** Thermodynamic constraints and grid stress dynamics will be modeled using PQC (Parameterized Quantum Circuit) based Q-PINNs and continuous-time Neural ODEs.
+3. **Quantum Reinforcement Learning (QRL) Exploration:** In addition to traditional optimization processes, dynamic policy learning will be experimentally tested using Quantum Deep Q-Networks (Q-DQN) trained via Markov Decision Processes.
+4. **Hardware Testing and Error Mitigation:** The developed hybrid algorithms will be deployed and tested on real quantum hardware (e.g., IBM Quantum), applying error mitigation techniques such as Zero-Noise Extrapolation (ZNE) to minimize the impact of hardware noise.
 
-## 📂 Depo Yapısı (Repository Structure)
+## 📂 Repository Structure
 
-*(Not: Bu bölüm, proje takvimi ilerledikçe kodlar eklendikçe aktif hale gelecektir.)*
+*(Note: This section will become active as the project timeline progresses and code is pushed.)*
 
-* `docs/`: Proje teklifi metni (PDF), literatür taraması ve teorik matematiksel ispatlar.
-* `notebooks/`: QUBO eşlemeleri, veri gömme (embedding) stratejileri ve QML eğitim adımlarını gösteren etkileşimli Jupyter defterleri.
-* `src/`: 
-  * `qml_models/`: Q-PINN ve Kuantum Neural ODE mimarileri.
-  * `optimization/`: QAOA devreleri ve ceza (penalty) fonksiyonu tanımlamaları.
-* `data/`: Endüstriyel enerji tüketim verileri için ön işleme betikleri (Data preprocessing scripts).
-
-## 🛠️ Kullanılacak Teknolojiler (Tech Stack)
-
-* **Kuantum Hesaplama:** Qiskit, PennyLane
-* **Makine Öğrenmesi & Diferansiyel Denklemler:** PyTorch, Torchdiffeq
-* **Veri Analizi:** NumPy, Pandas, SciPy
-
-## 👨‍💻 Araştırmacı / Yazar
-
-* **Hamza Derim** - *Lisans Öğrencisi, Matematik Bölümü*
-* [İletişim veya LinkedIn bağlantınızı buraya ekleyebilirsiniz]
-
----
-*Bu çalışma, kuantum hesaplamanın uygulamalı matematik ve operasyonel araştırma alanlarındaki dönüştürücü gücünü araştırmak amacıyla QIntern 2026 kapsamında önerilmiştir.*
+* `docs/`: Project proposal (PDF), literature review, and theoretical mathematical proofs.
+* `notebooks/`: Interactive Jupyter notebooks demonstrating QUBO mappings, data embedding strategies, and QML training
